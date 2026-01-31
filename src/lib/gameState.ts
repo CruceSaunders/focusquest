@@ -54,7 +54,7 @@ const DEFAULT_STATE: GameState = {
   tasks: [],
   focusDuration: 25,
   shortBreakDuration: 5,
-  longBreakDuration: 15,
+  longBreakDuration: 10,
   soundEnabled: true,
 };
 
