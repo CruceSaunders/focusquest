@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfMGWtjijG0pV079Z6nqCTBLnZwA48iF4",
-  authDomain: "focusquest-e5264.firebaseapp.com",
-  projectId: "focusquest-e5264",
-  storageBucket: "focusquest-e5264.firebasestorage.app",
-  messagingSenderId: "923577836668",
-  appId: "1:923577836668:web:ff93c625af903c8287d5f9",
-  measurementId: "G-CMSKZ0KLC4"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase (prevent re-initialization)
